@@ -1,0 +1,110 @@
+/*RESET*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    display: block;
+    border: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+/*----------------------------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container h2{
+    position: relative;
+    font-size: 20px;
+}
+
+.container h2::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #000;
+    bottom: -5px;
+    left: calc(50% - 75px);
+}
+
+.holder-time{
+    width: 100%;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.btn-holder{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-holder button{
+    font-family: 'Epilogue', sans-serif;
+    flex-basis: 30%;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 40px;
+    text-align: center;
+    transition: .2s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.btn-holder button:hover{
+    transform: scale(1.05);
+}
